@@ -9,7 +9,7 @@
     // background: linear-gradient(45deg, #833ab4, #e1306c, #fd1d1d);
     width: 25vw;
     height: 40vh;
-    margin-left: 35vw;
+    margin-left: 39vw;
     margin-top: 22vh;
     border-radius: 10px;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
@@ -18,7 +18,31 @@
 
     .loginHeading{
         text-align: center;
+
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 4vh;
+        }
+        
+        @media screen and (max-width: 440px) {
+            font-size: large;
+            margin-bottom: 5vh;
+        }
+       
     } 
+
+    .signHeading{
+        text-align: center;
+
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 5vh;
+        }
+
+        @media screen and (max-width: 440px) {
+            margin-bottom: 1.4vh;
+            font-size: large;
+        }
+        
+    }
 
     .emailLabelLog{
         margin-left: 4.5vw;
@@ -37,10 +61,19 @@
         border-radius: 5px;
         height: 3vh;
         font-size: large;
+
+        @media screen and (max-width: 1024px) {
+            width: 33vw;
+        }
+
         @media screen and (max-width: 440px) {
+            // margin-left: 50vw;
             font-size: medium;
             width: 45vw;
         }
+        // @media screen and (max-width: 1024px) {
+        //     width: 29vw;
+        // }
     }
     
     .passLabelLog{
@@ -61,27 +94,43 @@
         height: 3vh;
         font-size: large;
 
+        @media screen and (max-width: 1024px) {
+            width: 33vw;
+        }
+
         @media screen and (max-width: 440px) {
             font-size: medium;
             width: 45vw;
         }
-       
+        // @media screen and (max-width: 1024px) {
+        //     width: 29vw;
+        // }
     }
 
     .loginBtn{
         margin-top: 4vh;
-        margin-left: 10.3vw; 
+        margin-left: 9.2vw; 
         padding: 7px;
-        width: 4vw;
+        width: 6vw;
         border-radius: 5px;
         background-color: black;
         color: white;
+        font-size: medium;
+
+        @media screen and (max-width: 1024px) {
+            margin-left: 16vw;
+            width: 14vw;
+        }
+       
 
         @media screen and (max-width: 440px) {
+            margin-top: 6vh;
             font-size: medium;
-            width: 20vw;
-            margin-left: 26vw;
+            width: 25vw;
+            margin-left: 22vw;
         }
+
+        
     }
 
     // .signupLink{
@@ -103,11 +152,18 @@
         height: 3vh;
         font-size: large;
 
+        @media screen and (max-width: 1024px) {
+            width: 34vw;
+        }
+
         @media screen and (max-width: 440px) {
             font-size: medium;
             width: 45vw;
         }
-       
+        
+        // @media screen and (max-width: 1024px) {
+        //     width: 29vw;
+        // }
     }
 
     .linkClass{
@@ -117,35 +173,78 @@
             text-decoration: none;
             color: black;
             // padding-top: 10px;
-            @media screen and (max-width: 440px) {
-                font-size: medium;
-                margin-left: 13vw;
+
+            // @media screen and (max-height: 1080px) {
+            //     margin-left: 10vw;
+            // }
+
+            @media screen and (max-width: 1024px) {
+                font-size: large;
+                margin-left: 12vw;
             }
+     
+            @media screen and (max-width: 440px) {
+                font-size: small;
+                margin-left: 17vw;
+            }
+           
+            // @media screen and (max-width: 1024px) {
+            //     font-size: medium;
+            //     margin-left: 10vw;
+            // }
         }
         .signupLink{
-            margin-left: 8.7vw;
+            margin-left: 9vw;
             text-decoration: none;
             color: black;
 
-            @media screen and (max-width: 440px) {
-                margin-left: 16vw;
+            @media screen and (max-width: 1440px){
+                font-size: small;
+                margin-left: 8vw;
+            } 
+            
+            @media screen and (max-width: 1024px) {
+                font-size: large;
+               margin-left: 13vw;
             }
+
+            @media screen and (max-width: 440px) {
+                font-size: small;
+                margin-left: 20vw;
+            }
+
+            // @media screen and (max-width: 1024px) {
+            //     font-size: medium;
+            //     margin-left: 12vw;
+            // }
         }
     }
 
     .signupBtn{
         margin-top: 3vh;
-        margin-left: 10vw; 
+        margin-left: 9vw; 
         padding: 7px;
-        width: 4vw;
+        width: 6vw;
         border-radius: 5px;
         background-color: black;
         color: white;
+        font-size: medium;
+
+        @media screen and (max-width: 1024px) {
+            width: 14vw;
+            margin-left: 15vw;
+        }
+
         @media screen and (max-width: 440px) {
             font-size: medium;
             margin-left: 22.5vw;
             width: 25vw;
+            margin-bottom: -2vh;
         }
+        // @media screen and (max-width: 1024px) {
+        //     width: 15vw;
+        //     margin-left: 13vw;
+        // }
     }
   
     .nameDiv{
@@ -163,10 +262,21 @@
             height: 3vh;
             font-size: large;
 
+            @media screen and (max-width: 1024px) {
+                width: 34vw;
+            }
+
             @media screen and (max-width: 440px) {
                 font-size: medium;
                 width: 45vw;
             }
+            // @media screen and (max-width: 1024px) {
+            //     width: 29vw;
+            // }
+        }
+
+        @media screen and (max-width: 440px) {
+            margin-top: 1vh;
         }
 
        
@@ -187,10 +297,17 @@
             height: 3vh;
             font-size: large;
 
+            @media screen and (max-width: 1024px) {
+                width: 34vw;
+            }
+
             @media screen and (max-width: 440px) {
                 font-size: medium;
                 width: 45vw;
             }
+            // @media screen and (max-width: 1024px) {
+            //     width: 29vw;
+            // }
         }    
     }
 
@@ -198,12 +315,32 @@
         margin-top: 7px;
     }
 
+
+    @media screen and (max-width: 1024px) {
+        margin-left: 28vw;
+        width: 44vw;
+    }
+
+    @media screen and (max-height: 780px) {
+        height: 42vh;
+    }
+
     @media screen and (max-width: 440px) {
         margin-left: 15vw;
-        height: 45vh;
+        height: 42vh;
         width: 70vw;
     }
 
+    // @media screen and (max-height: 1080px) {
+    //     margin-left: 30vw;
+    //     width: 40vw;
+    //     height: 40vh;
+    // }
+
+    // @media screen and (max-width: 1024px) {
+    //     margin-left: 32vw;
+    //     width: 40vw;
+    // }
 }
 
 // 768 and 420px

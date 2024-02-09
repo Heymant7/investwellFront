@@ -21,7 +21,7 @@ const SignupForm = ({name, email, password, error, handleSignup, setName, setEma
     <>
       <form onSubmit={handleSignup}>
       <div className='mainDiv'>  
-      <h1 className='loginHeading' >SIGNUP PAGE</h1>  
+      <h1 className='signHeading' >SIGNUP PAGE</h1>  
       <div className='nameDiv'>
         <label className='nameLabelSign' >Name:</label><br></br>
         <input placeholder='Enter your name' className='nameInputSign' type="text" value = {name} onChange={(e) => setName(e.target.value)}/>

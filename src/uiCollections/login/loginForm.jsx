@@ -26,7 +26,7 @@ const LoginForm = ({email , setEmail , password, setPassword, error, setError, h
   //     }
   // }
 
-  console.log(email,password); 
+  // console.log(email,password); 
 
   return (
     <>
