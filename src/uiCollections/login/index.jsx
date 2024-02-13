@@ -27,9 +27,9 @@ const Index = () => {
   const handleLogin = async (e) => {
       e.preventDefault();
       const data = {email,password}
-      console.log(data);
-      const response = await axios.post('http://localhost:5000/user/login', data)
-      console.log(response); 
+      // console.log(data);
+      const response = await axios.post('http://localhost:8000/user/login', data, {withCredentials:true});
+      // console.log(response); 
 
       if(response && response.data.success){
         redirect('/home', {state : {props: response.data.loginServiceOutput.name}})  // data.loginServiceOutput.name
