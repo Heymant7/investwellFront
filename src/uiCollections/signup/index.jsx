@@ -15,7 +15,7 @@ const SignupPage = () => {
     e.preventDefault();
     const data = {name,email,password}
     console.log(data);
-    const response = await axios.post('http://localhost:5000/user/signup',data)
+    const response = await axios.post('http://localhost:8000/user/signup',data)
     console.log(response);
     
     if(response && response.data.success){

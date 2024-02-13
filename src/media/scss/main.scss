@@ -67,7 +67,6 @@
         }
 
         @media screen and (max-width: 440px) {
-            // margin-left: 50vw;
             font-size: medium;
             width: 45vw;
         }
@@ -348,7 +347,23 @@
 .homeDiv{
     text-align: center;
     font-size: xx-large;
-    margin-top: 10vh;
+    margin-left: 40vw;
+    margin-top: 40vh;
+    width: 20vw;
+}
+
+.logoutBtn{
+    margin-left: 95vw;
+    margin-top: 5vh;
+    background-color: #000;
+    // border: none;
+    color: #fff;
+    padding: 8px 16px;
+    // text-decoration: none;
+    // font-size: 14px;
+    // margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
 .toastMsg {
@@ -362,4 +377,113 @@
     color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
+
+.homeBtn{
+    margin-left: 50vw;
+}
+
+// $table-bg-color: #f2f2f2;
+// $table-border-color: #ddd;
+// $table-hover-color: #ccc;
+// $button-bg-color: black;
+// $button-color: white;
+
+.policyTable {
+    width: 60%;
+    margin-left: 20vw;
+    border-collapse: collapse;
+    border: 2px solid black;
+    th, td {
+      padding: 8px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    th {
+      background-color: #f2f2f2;
+    }
+  
+    tr:hover {
+      background-color: #ccc;
+    }
+  }
+  
+  .pdfBtn {
+    background-color: #000;
+    // border: none;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+
+  $navbar-width: 18vw;
+  $navbar-bg-color: #333;
+  $navbar-text-color: #fff;
+  $navbar-hover-bg-color: #555;
+  
+  .navbarContainer {
+    width: $navbar-width;
+    height: 100vh;
+    background-color: $navbar-bg-color;
+    color: $navbar-text-color;
+    padding-top: 1%; /* Adjust top padding as needed */
+    // padding-left: 20px;
+    position: fixed;
+    // left: 0;
+    // top: 0;
+    transition: width 0.5s ease;
+
+    &.show {
+        width: 0px; // Adjust the width of the expanded navbar 
+        // display: none;
+
+        .navLists{
+            display: none;
+            transition: width 0.5s ease;
+        }
+    }
+    
+
+    .navLists {
+        font-size: x-large;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .listHome{
+            // padding: 10px 20px;
+            padding: 2vh 2vh;
+            padding-left: 2vw;
+            cursor: pointer;
+        }
+        .listAttendance{
+            // padding: 10px 20px;
+            padding: 2vh 2vh;
+            padding-left: 2vw;
+            cursor: pointer;
+        }
+        .listPolicy{
+            // padding: 10px 20px;
+            padding: 2vh 2vh;
+            padding-left: 2vw;
+            cursor: pointer;
+        }
+    }
+    .navLists :hover{
+        background-color: $navbar-hover-bg-color;
+    }
+
+    .navIcon{
+        width: 3vw;
+        margin-top: -2vh;
+        // margin-left: 2vw;
+        cursor: pointer;
+        border-radius: 50%;
+    }
   }

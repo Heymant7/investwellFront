@@ -3,12 +3,13 @@ import '../../media/css/main.css'
 import { useLocation } from 'react-router-dom'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import Navbar from '../navbar/navbar'
 
 
 const Home = () => {
-  const myName = useLocation()
-  const name = myName.state.props
-  console.log(name);
+  // const myName = useLocation()
+  // const name = myName.state.props
+  // console.log(name);
   const [toast, setToast] = useState(false)
   
   useEffect(()=>{
@@ -16,7 +17,7 @@ const Home = () => {
     setTimeout(()=>{
       setToast(false)
     },5000)
-  }, [name])
+  }, [])
  
   const redirect = useNavigate()
   // const handleHome = async () => {
@@ -53,14 +54,15 @@ const Home = () => {
 
   return (
     <>
-    <div className="homeDiv">Hello {name}</div>
-    <button onClick={handleHome} >CLICK ME</button>
+    <Navbar/>
+    <button className='logoutBtn' >Logout</button><button onClick={handleHome} className='homeBtn'>CLICK ME</button>
+    <div className="homeDiv">Hello</div>
     <div className="">
-     
     </div>
     {toast && <div className="toastMsg">
       logged In!!
     </div> }
+    
     </>
   )
 }
